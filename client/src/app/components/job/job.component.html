@@ -1,0 +1,5 @@
+<div class="container">
+    <input type="text" [(ngModel)]="title" placeholder="Job title">
+    <editor [init]="editorConfig" [(ngModel)]="description" (ngModelChange)="handleEditorChange($event)"></editor>
+    <button class="btn" (click)="saveContent()">Save</button>
+</div>

@@ -1,0 +1,131 @@
+@import url('../../../styles.css');
+@import url('../../../../node_modules/font-awesome/css/font-awesome.css');
+
+.hero {
+    background: url("/images/minify/cu-hero.jpg") no-repeat center;
+    display: flex;
+    top: 0;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    justify-content: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.cu-hr {
+    width: 150px;
+    border-bottom: 2px solid #5cbbc8;
+    margin: 30px auto;
+}
+
+.hero-cta {
+    margin-top: 30px;
+}
+
+.section {
+    padding: 8rem 0;
+}
+
+.tagline {
+    padding-left: 30px;
+}
+
+.tagline .cu-hr {
+    margin: 50px 0;
+    width: 13%;
+}
+
+.tagline p {
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0 0 2rem;
+    font-weight: 200;
+    color: #2f2f2f;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.services-container {
+    display: flex;
+    position: relative;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto; 
+}
+
+.serviceBox {
+    position: relative;
+    width: 350px;
+    height: 280px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(#8BD8BD, #5CBBC8);
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon i {
+    color: #fff;
+    font-size: 60px;
+}
+
+.serviceBox-title {
+    position: relative;
+    top: 70%;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+@media(max-width: 960px) {  
+    .section {
+        padding: 3rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .info .container .row {
+        flex-direction: column-reverse;
+        padding: 0px 15px;
+    }
+
+    .img-fluid {
+        margin-bottom: 30px;
+    }
+
+    .tagline {
+        padding: 0;
+    }
+
+    .services-container {
+        max-width: 90%;
+    }
+
+    .btn {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+}

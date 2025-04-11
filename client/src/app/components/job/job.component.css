@@ -1,0 +1,9 @@
+@import url('../../../styles.css');
+
+.container {
+    margin-bottom: 100px;
+}
+
+.btn {
+    margin-top: 20px;
+}

@@ -1,0 +1,17 @@
+<nav [class.scrolled]="isScrolled">
+    <a href="/">
+      <img class="logo" src="images/LOGO-CU-COLOR.png" alt="Logo">
+    </a>
+    
+    <div class="hamburger" (click)="toggleMenu()">&#9776;</div>
+  
+    <ul [class.nav-active]="menuOpen">
+      <a class="nav-link hover-underline-animation left" href="" (click)="closeMenu()"><li>HOME</li></a>
+      <a class="nav-link hover-underline-animation left" href="about" (click)="closeMenu()"><li>ABOUT</li></a>
+      <a class="nav-link hover-underline-animation left" href="services" (click)="closeMenu()"><li>SERVICES</li></a>
+      <a class="nav-link hover-underline-animation left" href="careers" (click)="closeMenu()"><li>CAREERS</li></a>
+      <a class="nav-link hover-underline-animation left" href="news" (click)="closeMenu()"><li>NEWS</li></a>
+      <a class="nav-link hover-underline-animation left" href="contact" (click)="closeMenu()"><li>CONTACT</li></a>
+    </ul>
+</nav>
+  

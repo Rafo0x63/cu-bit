@@ -1,0 +1,433 @@
+﻿.footer {
+    margin-top: 2rem;
+}
+
+.disabled{
+    display:none;
+}
+
+.education-title {
+    text-align: center;
+    padding: 30px;
+    color: #211d4d;
+    font-size: 3.5rem;
+}
+
+.fillIn {
+    /*background: linear-gradient(90deg, rgb(139, 216, 189) 0%, rgb(92, 187, 200) 100%);*/
+    background:#243665 ;
+}
+
+.left p, .left small{
+    color:white;
+}
+
+.fillIn .content {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    flex-direction: column;
+}
+
+    .fillIn .right {
+        background: #fff;
+        border: 1px solid aliceblue;
+        color: black;
+        border-radius: 10px;
+    }
+
+    .fillIn .left, .fillIn .right {
+        width: 50%;
+        padding: 2rem;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+.box-2 {
+    display: flex;
+    gap: 1rem;
+    color: black;
+}
+
+    .box-2 .termin, .box-2 .cijena {
+        width: 50%;
+        /* background: #ffffff42; */
+        padding: 1rem;
+        /* border-top: 2px solid #5bc0de; */
+        /* border-radius: 10px;*/
+    }
+
+        .box-2 .cijena .price {
+            color: #f32e59;
+            font-size: 1.8rem;
+        }
+
+.inputTxt > div input, .inputTxt > div textarea{
+    width: 100%;
+    
+}
+
+.right input, .right textarea{
+    outline:none;
+}
+
+.inputTxt > div, .tvrtkaOib > div{
+    margin-bottom: .5rem;
+}
+
+.bndl input{
+    width: 100%;
+}
+
+.bndl > div  {
+    width: 50%;
+}
+
+.bndl {
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+.description {
+    padding-top: 1rem;
+}
+
+.data {
+    border-left: 2px solid #5cbbc8;
+    padding-left: 1rem;
+}
+
+.descLink {
+    margin: 2rem 0;
+}
+
+    .descLink a {
+        background: #5cbbc8;
+        color: white;
+        padding: .6rem 1rem;
+        border-radius: 18px;
+        margin-right: 1rem;
+        text-transform: uppercase;
+    }
+
+        .descLink a:hover {
+            background: #4ea4b0;
+        }
+
+#brojPolaznika{
+    float:right;
+}
+
+.right label{
+    display:inline;
+}
+
+.right p {
+    margin: 10px 4px 0 0;
+}
+
+.right label {
+    color: #3b393e;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.right .submit {
+    width: 100%;
+    margin-top: 1rem;
+    background: #5cbbc8;
+    border: none;
+    color: white;
+    border-radius: 16px;
+    padding: 4px;
+    text-transform: uppercase;
+    transition: .2s ease-in
+}
+
+    .right .formTitle {
+        color: #5cbbc8;
+    }
+
+    .right .submit:hover {
+        background: #4ea4b0;
+        cursor: pointer;
+    }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #3b393e !important;
+        opacity: 1; /* Firefox */
+    }
+
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #3b393e;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #3b393e;
+}
+
+.eduDesc {
+    max-width: 1200px;
+    margin:auto;
+}
+
+    .eduDesc .box {
+        display: flex;
+    }
+
+    .eduDesc .boxL {
+        width: 20%;
+        border-right: 2px solid #5cbbc8;
+        margin: 1rem;
+        text-align: right;
+        padding: 0 2rem;
+    }
+
+
+    .eduDesc .boxR {
+        width: 80%;
+        margin: 1rem;
+    }
+
+    .eduDesc .boxL p {
+        color: #5cbbc8;
+        font-weight: 600;
+    }
+
+.itemAccordion {
+    display: none;
+}
+
+.accordion {
+    border: 1px solid lightgray;
+}
+
+    .accordion.active .accordionTitle p {
+        color: #5cbbc8;
+    }
+    .accordion .accordionTitle, .accordion .itemAccordion {
+        padding: 8px;
+    }
+    .accordion .accordionTitle{
+        cursor: pointer;
+    }
+
+    .accordion .accordionTitle p {
+        margin: 0;
+        font-size: 1.4rem;
+    }
+
+#sadrzaj .boxR {
+    background: white;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1280px;
+    margin: auto;
+    gap: 1.6rem;
+}
+
+.eduBox {
+    background: white;
+    padding: 1rem;
+    max-width: 400px;
+    transition: .2s ease-in-out;
+    border-radius: 10px;
+}
+
+    .eduBox .btn {
+        width: 100%;
+        padding: 0;
+    }
+
+    .eduBox .more {
+        background: #5cbbc8;
+        padding: 6px;
+        text-align: center;
+        border-radius: 16px;
+        font-weight: 600;
+    }
+
+    .eduBox:hover {
+        background: #fffc;
+    }
+
+    .eduBox .title, .eduBox bold {
+        color: #5cbbc8;
+    }
+
+.eduImg {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+    .eduImg img {
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+    }
+
+.eduBox p {
+    color: white;
+}
+
+.grid3.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.education {
+    background: linear-gradient(90deg, rgb(139, 216, 189) 0%, rgb(92, 187, 200) 100%);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.education.mg{
+    margin-bottom:4rem;
+}
+
+    .education h2 {
+        text-align: center;
+        color: white;
+        padding-bottom: 2rem;
+    }
+
+span.pk {
+    color: #5cbbc8;
+}
+
+.eduBox p {
+    color: #243665;
+}
+
+.btn p{
+    color:white;
+}
+
+.footer {
+    margin-top: 0;
+}
+
+.subTxt {
+    color: #5cbbc8;
+}
+
+.inputBg input, .inputBg textarea {
+    border: none;
+    border-bottom: 2px solid #5cbbc8;
+}
+
+.box-2 .cijena .price {
+    color: #f32e59;
+    font-size: 1.8rem;
+}
+
+p.subt {
+    border-bottom: 2px solid;
+    color: #5cbbc8;
+}
+
+.eduBox p {
+    margin-bottom:0;
+}
+
+.eduBox .btn {
+    margin-top: 1rem;
+}
+
+br.mb {
+    display: none;
+}
+
+.osobaIs label, .terminAndPolazak div label, .trainingType label{
+    margin-right: .6rem;
+}
+
+@media (max-width:1160px) {
+    .fillIn .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fillIn .left, .fillIn .right {
+        width: unset;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .fillIn .right {
+        margin: 1rem;
+    }
+}
+
+@media (max-width:870px) {
+    .eduDesc .box {
+        flex-direction: column;
+    }
+    .eduDesc .boxL {
+        width: unset;
+        text-align: left;
+        padding: 0;
+    }
+    .eduDesc .boxR {
+        width: unset;
+    }
+}
+
+@media (max-width:480px) {
+    br.mb {
+        display:block;
+    }
+    .box-2 .termin, .box-2 .cijena {
+        width: 100%;
+    }
+
+    #brojPolaznika {
+        float: none;
+        margin-top: 1rem;
+        display: block;
+        width: 100%;
+    }
+
+    .box-2 {
+        flex-direction: column;
+    }
+}
+
+#RadioButtonList1 tbody {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#RadioButtonList1 {
+    width: 100%;
+}
+
+.radio-buttons label{
+    padding-left: 10px;
+}
+
+#cbTermin1, #cbTermin2 {
+    margin-right: 5px;
+}
+
+#tbxBrojPolaznika {
+    margin-left: 5px;
+}
+
+#cbxMarketing, #cbxPrivola {
+    margin-right: 5px;
+}
+
+#ddlBrojPolaznika{
+    margin-left: 5px;
+}

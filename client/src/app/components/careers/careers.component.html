@@ -1,0 +1,57 @@
+<h1 class="text-center my-5">Careers</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 my-3 career-text text-center">
+            If you are a motivated, hard-working, technology enthusiast whose goal is to work in a motivating and relaxed environment side by side with major global companies. Take a moment and check what we are looking for!
+        </div>
+    </div>
+</div>
+
+<div class="career-img my-3">
+    <picture>
+        <source srcset="images/minify/hr-audit-resume-applicant-paper-interview-selection-human-resource-company_500px.jpg" media="(max-width:500px)">
+        <img src="images/minify/hr-audit-resume-applicant-paper-interview-selection-human-resource-company_2000px.jpg">
+    </picture>
+</div>
+
+<section class="open-jobs">
+    <h2 class="text-center my-5">Open Positions</h2>
+    
+    <div class="accordion">
+        <div class="accordion-item" *ngFor="let job of jobs; let i = index">
+          <button class="accordion-header" (click)="toggle(i)">
+            <h4 [innerHTML]="job.title"></h4>
+            <h4 *ngIf="activeIndex === i">-</h4>
+            <h4 *ngIf="activeIndex !== i">+</h4>
+          </button>
+          <div class="accordion-body" *ngIf="activeIndex === i">
+            <div class="job-description-wrapper" [innerHTML]="job.description"></div>
+            
+            <form class="job-form" [formGroup]="jobForm" (ngSubmit)="onSubmit()">
+              <input formControlName="name" type="text" placeholder="First name *" required>
+              <input formControlName="surname" type="text" placeholder="Last name *" required>
+              <input formControlName="email" type="email" placeholder="Email *" required>
+              <input formControlName="phone" type="tel" placeholder="Phone *" required>
+            
+              <label class="file-upload" for="cv">
+                <input id="cv" type="file" (change)="onFileChange($event, 'cv')" accept="application/pdf,.doc, .docx,.csv, application/msword" required>
+                <p><i class="fa-solid fa-arrow-up-from-bracket"></i> {{ cvFileName || 'CV/Resume *' }}</p>
+              </label>
+            
+              <label class="file-upload" for="cover-letter">
+                <input id="cover-letter" type="file" (change)="onFileChange($event, 'cover-letter')" accept="application/pdf,.doc, .docx,.csv, application/msword">
+                <p><i class="fa-solid fa-arrow-up-from-bracket"></i> {{ coverLetterFileName || 'Cover letter' }}</p>
+              </label>
+            
+              <input style="width: 100%;" formControlName="aboutMe" type="text" placeholder="Something about yourself">
+              <input style="width: 100%;" formControlName="social" type="text" placeholder="Github, Linkedin, Dribble, Twitter...">
+              <input style="width: 100%;" formControlName="from" type="text" placeholder="How did you hear about us?">
+            
+              <input class="btn submit-btn" type="submit" [disabled]="!jobForm.valid">
+            </form>            
+
+          </div>
+        </div>
+      </div>
+</section>

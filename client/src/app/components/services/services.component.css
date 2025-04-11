@@ -1,0 +1,54 @@
+@import url('../../../styles.css');
+
+h1 {
+    margin-top: 50px;
+}
+
+.services-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 5rem;
+}
+
+.services-img {
+    width: 500px;
+    height: auto;
+    display: initial;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.text-container  h3 {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.col-md-7 {
+    display: flex;
+    justify-content: center;
+}
+
+.hire-us {
+    padding-bottom: 100px;
+}
+
+@media (max-width: 960px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .services-wrapper .row:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+}

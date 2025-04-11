@@ -1,0 +1,63 @@
+@import url('../../../styles.css');
+
+.services-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 5rem;
+}
+
+.services-img {
+    width: 500px;
+    height: auto;
+    display: initial;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.col-md-7 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.col-md-7:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.col-md-5 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    margin: 6rem 0;
+}
+
+@media (max-width: 960px) {
+    .services-wrapper {
+        margin: 0px 30px; 
+    }
+
+    .services-wrapper .row:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .services-wrapper .row {
+        margin-bottom: 100px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 20px 0;
+    }
+
+    .text-container {
+        text-align: center;
+    }
+}

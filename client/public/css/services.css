@@ -1,0 +1,95 @@
+﻿.services-img {
+    width: 500px;
+    height: auto;
+    display: initial;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+@media (max-width:760px) {
+    .services-img {
+        transform: none;
+        position: initial;
+    }
+}
+
+.col-md-7 {
+    display:flex;
+    justify-content:center;
+}
+
+.text-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+h3 {
+    text-align: center;
+}
+.services-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 5rem;
+}
+.col-md-5 {
+    padding:0!important;
+}
+body {
+    background-image: url("../images/CU-PATTERN.svg");
+    
+}
+@font-face {
+    font-family: Montserrat-Light;
+    src: url("'../fonts/Monserrat light/Montserrat-Light.otf'") format("opentype");
+}
+p {
+    font-size: 16px;
+    color:black;
+}
+.hire-us__button {
+    margin: 0 auto;
+    text-align:center;
+    padding-bottom: 5rem;
+}
+.fas.fa-arrow-right {
+    margin-left: 10px;
+    animation-duration: 1s;
+    animation-name: changemargin;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.btn.btn-orange.withradius.secbtn {
+    max-width: 200px;
+}
+@keyframes changemargin {
+    from {
+        margin-left: 10px;
+    }
+    to {
+       margin-left: 15px;
+    }
+}
+
+@media (max-width:767px) {
+
+
+    .text-container {
+        text-align: center;
+    }
+    .services-wrapper .col-md-5:nth-child(2n+0) {
+        order:-1;
+    }
+}
+    

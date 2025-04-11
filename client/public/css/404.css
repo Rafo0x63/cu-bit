@@ -1,0 +1,85 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html,
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #5cbbc8;
+    font-family: "Poppins", sans-serif;
+}
+
+#bg-img {
+    position: absolute;
+    right: -10%;
+    z-index: -10;
+    height: 100vh;
+}
+
+.error-404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.img-404 > svg {
+    width: 200px;
+    height: 200px;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.error-404 h1 {
+    font-size: 15rem;
+}
+
+.bottom-cont h2 {
+    font-size: 32px;
+}
+
+.bottom-cont p {
+    font-size: 24px;
+    padding-bottom: 38px;
+}
+
+.bottom-cont button {
+    font-size: 18px;
+    padding: 10px 42px;
+    border-radius: 25px;
+    border: 1px solid #5cbbc8;
+    background: #5cbbc8;
+    transition: 0.2s ease-in;
+    margin-bottom: 38px;
+}
+
+.bottom-cont > button:nth-child(3) > a:nth-child(1) {
+    color: #fff !important;
+}
+
+.bottom-cont button:hover {
+    background: rgba(92, 187, 200, 0.2);
+    color: #5cbbc8;
+    cursor: pointer;
+}
+
+.bottom-cont {
+    text-align: center;
+}

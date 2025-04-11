@@ -1,0 +1,329 @@
+﻿/*.services-container {
+    width: 100%;
+    height: 680px;
+}*/
+
+/*#learn-more {
+    fill-opacity: 0;
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 2;
+    border-radius: 5px;
+    stroke-linejoin: round;
+    transition: all 250ms ease-in;
+    cursor: pointer;
+}
+
+    #learn-more:hover {
+        fill-opacity: 1;
+    }
+
+        #learn-more:hover ~ .learn-more-text {
+            fill: #233361;
+        }
+
+.learn-more-text {
+    font-family: "Roboto";
+    fill: #fff;
+    pointer-events: none;
+    font-size: 14px;
+    transition: all 250ms ease-in;
+}
+
+.center {
+    fill: #233361;
+}
+
+.pointer {
+    fill: #fff;
+    stroke: #233361;
+    stroke-width: 2;
+}
+
+.nav-copy {
+    font-family: "Roboto";
+    fill: #fff;
+    fill-opacity: 1;
+    transition: all 250ms ease-in;
+}
+
+    .nav-copy.changing {
+        fill-opacity: 0;
+    }*/
+
+/*.service {
+    cursor: pointer;
+}
+
+    .service text {
+        font-size: 14px;
+        font-family: "Roboto";
+        text-anchor: middle;
+        fill: white !important;
+    }
+
+    .service .icon-wrapper {
+        transform-origin: 50% 50%;
+    }
+
+        .service .icon-wrapper, .service .icon-wrapper > * {
+            transition: all 250ms ease-in;
+        }
+
+    .service circle {
+        fill: #233361;
+    }
+
+        .service circle.shadow {
+            fill-opacity: 0;
+            filter: url(#service-shadow);
+        }
+
+    .service use {
+        fill: #fff;
+    }
+
+    .service text {
+        fill: #4d4d4d;
+    }
+
+    .service.active .icon-wrapper, .service:hover .icon-wrapper {
+        transform: scale(1.15) translateY(-5px);
+    }
+
+        .service.active .icon-wrapper, .service.active .icon-wrapper > *, .service:hover .icon-wrapper, .service:hover .icon-wrapper > * {
+            transition: all 250ms ease-out;
+        }
+
+            .service.active .icon-wrapper circle.shadow, .service:hover .icon-wrapper circle.shadow {
+                fill-opacity: 0.4;
+            }
+
+    .service.active text, .service:hover text {
+        fill: #005fa4;
+        font-weight: bold;
+    }
+
+svg {
+    transform: unset;
+    stroke-dasharray: unset;
+    stroke-dashoffset: unset;
+    animation: unset;
+}*/
+
+/*this are changes for home mobile version*/
+@media (max-width: 767px) {
+    .container:not(header .container, footer .container) {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        /*display: -webkit-flex;*/
+        /*display: flex;*/
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        optional -webkit-box-align: start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+    }
+
+    .container .first_div {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    }
+
+    .container .second_div {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+    }
+}
+
+/*@media(max-width: 575px) {
+    #circle-nav-services {
+        transform: scale(1.19);
+        position: relative;
+        right: 9px;
+    }
+}
+
+@media(min-width: 576px) {
+    #circle-nav-services {
+        transform: scale(1.2);
+        position: unset;
+        right: unset;
+    }
+}
+
+@media(min-width: 772px) {
+    #circle-nav-services {
+        transform: scale(1.5);
+    }
+}*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');*/
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}*/
+
+/*body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background: #3f3752;*/
+/*}*/
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.services-container {
+    display: flex;
+    position: relative;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+    .services-container .title {
+        z-index: 20;
+        position: relative;
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+        top: 100%;
+        transform: translateY(-100%);
+    }
+
+/*    .services-container:hover .title {
+        display:none;
+    }*/
+
+.serviceBox1:hover .title1 {
+    display: none;
+}
+
+.serviceBox2:hover .title2 {
+    display: none;
+}
+
+.serviceBox3:hover .title3 {
+    display: none;
+}
+
+.serviceBox4:hover .title4 {
+    display: none;
+}
+
+.serviceBox5:hover .title5 {
+    display: none;
+}
+
+.serviceBox6:hover .title6 {
+    display: none;
+}
+
+.services-container .serviceBox {
+    position: relative;
+    width: 350px;
+    height: 280px;
+    /*background: #fff;*/
+    border-radius: 20px;
+    overflow: hidden;
+    cursor:pointer;
+}
+
+    .services-container .serviceBox .icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#8BD8BD, #5CBBC8);
+        transition: 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 17;
+        transition-delay: 0.25s;
+    }
+
+    .services-container .serviceBox:hover .icon {
+        top: 30px;
+        left: calc(50% - 40px);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        transition-delay: 0s;
+    }
+
+    .services-container .serviceBox .icon i {
+        font-size: 5em;
+        color: #fff;
+        transition: 0.5s;
+        transition-delay: 0.25s;
+    }
+
+    .services-container .serviceBox:hover .icon i {
+        font-size: 2em;
+        transition-delay: 0s;
+    }
+
+    .services-container .serviceBox .content {
+        position: relative;
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+        margin-top: 100px;
+        z-index: 16;
+        transform: scale(0);
+        transition: 0.5s;
+        transition-delay: 0s;
+    }
+
+    .services-container .serviceBox:hover .content {
+        transform: scale(1);
+        transition-delay: 0.25s;
+    }
+
+    .services-container .serviceBox .content h2 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .services-container .serviceBox .content p {
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+
+.logo-center-footer {
+    display: block;
+    padding-bottom: 50px;
+}
+
+.serviceBox:hover {
+    background:transparent;
+}
+
+.bottom-section{
+    color: #2f2f2f !important;
+}

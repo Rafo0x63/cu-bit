@@ -1,0 +1,1 @@
+﻿setInterval(function () { $(".owl-next").trigger("click"); }, 5000);

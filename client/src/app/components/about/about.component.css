@@ -1,0 +1,79 @@
+@import url('../../../styles.css');
+
+.about-title {
+    margin: 50px 0px;
+}
+
+.about-text p {
+    max-width: 870px;
+    margin: 0 auto;
+}
+
+.map-eu {
+    max-width: 80%;
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, rgb(139, 216, 189) 0%, rgb(92, 187, 200) 100%);
+    color: #fff;
+    padding: 20px;
+}
+
+.svg {
+    width: 500px;
+}
+
+.card {
+    border-radius: 20px;
+    min-height: 100%;
+    padding: 18px;
+    box-shadow: 0px 2px 6px #f8f9fa;
+}
+
+.user-picture img {
+    position: absolute;
+    top: -20%;
+    right: 10%;
+    background: #f8f9fa !important;
+    padding: 10px;
+}
+
+.user-name {
+    width: 50%;
+    margin-right: 150px;
+    font-size: 1.15rem;
+}
+
+.user-content .small {
+    font-size: 80%;
+}
+
+.join-us {
+    width: 90%;
+    margin: 20px auto;
+    padding: 40px;
+    background: linear-gradient(90deg, rgb(139, 216, 189) 0%, rgb(92, 187, 200) 100%);
+    color: #fff;
+}
+
+@media (max-width: 960px) {
+    .map-eu {
+        flex-direction: column;
+    }
+
+    .svg {
+        max-width: 100%;
+    }
+
+    .countries h3 {
+        font-size: 1.3rem;
+    }
+
+    .countries ul {
+        text-align: center;
+    }
+
+    .countries {
+        margin-bottom: 30px;
+    }
+}

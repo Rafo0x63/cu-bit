@@ -1,0 +1,124 @@
+﻿#cards .card {
+    /*border-radius: 20px;*/
+    min-height: 100%;
+    padding: 18px;
+    box-shadow: 0px 2px 6px #f8f9fa;
+}
+
+#cards .heading-border {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+}
+
+#cards .card .user-picture img {
+    position: absolute;
+    top: -20%;
+    right: 10%;
+    background: #f8f9fa !important;
+    padding: 10px;
+}
+
+#cards .card .user-content .user-name {
+    margin-right: 150px;
+}
+
+.blockquote-footer::before {
+    display:none !important;
+}
+
+.padding-p {
+    padding-top: 20px;
+}
+
+#cards .card .user-content .user-name {
+    width: 50%  !important;
+}
+
+.border-0 {
+    border: 2px solid #f8f9fa !important;
+}
+
+.about-title {
+    text-align: center;
+    padding: 30px;
+    color: #211d4d;
+    font-size:3.5rem;
+}
+
+.team-title {
+    color: #211d4d !important;
+}
+
+.about-text {
+    text-align:center;
+    padding: 40px 60px;
+    /* background: linear-gradient(90deg, rgb(139, 216, 189) 0%, rgb(92, 187, 200) 100%);*/
+    /*background: #f8f9fa;*/
+    /*border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;*/
+}
+
+    .about-text p {
+        color: #211d4d;
+        max-width:870px;
+        margin:auto;
+        font-size:16px !important;
+    }
+
+.join_us {
+    max-width:80%;
+    margin:20px auto;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(90deg, rgb(139, 216, 189) 0%, rgb(92, 187, 200) 100%);
+}
+
+.join_us--title{
+color:#fff;
+}
+
+/*.join_us--btn {
+    font-size: 18px !important;
+    padding: 10px 42px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    background: #fff;
+    color: #211d4d;
+    transition: 0.2s ease-in;
+    text-align: center;
+}
+
+    .join_us--btn:hover {
+        background: transparent;
+        cursor: pointer;
+        border-color:#fff;
+        color:#fff;
+    }*/
+
+.our-team {
+    font-size: 2.5em;
+}
+
+/*map css*/
+.map-section h3{
+    text-align: center;
+    color: #211d4d;
+}
+
+.map-section {
+    margin: 40px;
+}
+
+.svg img{
+    width:100%;
+    width:500px;
+}
+
+.user-name {
+    font-size: 1.15rem
+}
+
+.user-name.small {
+    font-size:80%;
+}

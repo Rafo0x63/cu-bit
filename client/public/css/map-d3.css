@@ -1,0 +1,138 @@
+﻿html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.svg svg {
+    background-color: transparent;
+    margin: auto;
+    display: block;
+    transform: none;
+    stroke-dasharray:unset;
+}
+
+
+.Croatia,
+.United.Kingdom,
+.Greece,
+.Slovenia,
+.Serbia,
+.Germany,
+.Austria,
+.Romania,
+.Montenegro,
+.Macedonia,
+.Bosnia,
+.Albania,
+.Switzerland {
+    fill: #243665;
+}
+
+h1 {
+    color: rgb(115, 115, 115);
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 2px rgb(217, 217, 217);
+}
+
+
+
+.map-eu .countries li {
+    list-style: none;
+    padding-bottom: 6px;
+    letter-spacing: 1.6px;
+}
+
+.map-eu ul {
+    padding: 0;
+    line-height: 1.5em;
+}
+
+.map-eu h3 {
+    color: #161f35;
+    padding-top: 0.7em;
+}
+
+.map-eu {
+    max-width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, rgb(139, 216, 189) 0%, rgb(92, 187, 200) 100%);
+    color: #fff;
+}
+
+@media screen and (max-width: 540px) {
+    
+    .map-eu {
+        max-width: unset;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .countries {
+        text-align: center;
+    }
+
+    .svg img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1170px) {
+    .map-eu{
+        max-width:100%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .svg{
+        width: 100%;
+    }
+
+    .svg svg {
+        /*width:550px !important;*/
+        width:100% !important;
+    }
+
+    .countries {
+        margin-left: 16px;
+        padding-left:8px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .svg {
+        width: 100%;
+    }
+
+    .svg svg {
+        width: 100% !important;
+        overflow:hidden;
+    }
+
+    .map-eu{
+        margin:0;
+    }
+
+    .countries {
+        margin: 0px;
+        padding: 0 8px;
+    }
+}
