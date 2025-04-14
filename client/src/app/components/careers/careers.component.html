@@ -48,9 +48,15 @@
               <input style="width: 100%;" formControlName="social" type="text" placeholder="Github, Linkedin, Dribble, Twitter...">
               <input style="width: 100%;" formControlName="from" type="text" placeholder="How did you hear about us?">
             
-              <input class="btn submit-btn" type="submit" [disabled]="!jobForm.valid">
-            </form>            
-
+              <input class="btn submit-btn"
+                      type="submit"
+                      [disabled]="!jobForm.valid || submitting || submitted"
+                      [value]="
+                        submitted ? 'Submitted!' :
+                        submitting ? 'Submitting...' :
+                        'Submit'
+              ">
+            </form>
           </div>
         </div>
       </div>

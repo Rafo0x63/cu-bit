@@ -41,6 +41,10 @@ input::-webkit-inner-spin-button {
     margin: 30px 0;
 }
 
+.btn:disabled {
+   background: gray;
+}
+
 @media (max-width: 960px) {
     .col-lg-7 {
         padding: 0px 20px;

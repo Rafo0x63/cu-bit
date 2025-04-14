@@ -17,10 +17,12 @@ export class CareersComponent {
   jobs: Job[] = [];
   parsedJobs: any[] = [];
   jobForm: FormGroup;
-  formData: FormData = new FormData();
 
   cvFileName: string | null = null;
   coverLetterFileName: string | null = null;
+
+  submitting: boolean = false;
+  submitted: boolean = false;
 
   constructor(private jobService: JobService, private http: HttpClient, private fb: FormBuilder) {
     this.jobForm = this.fb.group({
@@ -67,27 +69,30 @@ export class CareersComponent {
   }
 
   onSubmit(): void {
-    if (this.jobForm.invalid) {
+    if (this.submitting || this.jobForm.invalid) {
       return;
     }
 
+    this.submitting = true;
+
     const formValues = this.jobForm.value;
+    const formData = new FormData();
 
     for (let key in formValues) {
       if (formValues[key] && key !== 'cv' && key !== 'coverLetter') {
-        this.formData.append(key, formValues[key]);
+        formData.append(key, formValues[key]);
       }
     }
 
     if (formValues.cv) {
-      this.formData.append('cv', formValues.cv, formValues.cv.name);
+      formData.append('cv', formValues.cv, formValues.cv.name);
     }
 
     if (formValues.coverLetter) {
-      this.formData.append('cover-letter', formValues.coverLetter, formValues.coverLetter.name);
+      formData.append('cover-letter', formValues.coverLetter, formValues.coverLetter.name);
     }
 
-    this.sendFormData(this.formData);
+    this.sendFormData(formData);
   }
 
   onFileChange(event: Event, fieldName: string): void {
@@ -105,8 +110,8 @@ export class CareersComponent {
   }
 
   sendFormData(formData: FormData): void {
-    const apiUrl = 'http://localhost:5000';
-
+    const apiUrl = 'http://localhost:5000/apply';
+  
     this.http.post(apiUrl, formData).pipe(
       map(response => {
         console.log('Form submitted successfully!', response);
@@ -114,10 +119,22 @@ export class CareersComponent {
       }),
       catchError(error => {
         console.error('Error submitting form!', error);
+        alert('Oops! Something went wrong. Please try again or send the application directly to zeljko@crnkovic-usluge.hr');
+        this.submitting = false;
         return of('Error submitting form!');
       })
     ).subscribe(response => {
-      console.log(response);
+      if (typeof response === 'object') {
+        this.submitted = true;
+        alert('Your application has been submitted successfully!');
+        this.jobForm.reset();
+        this.cvFileName = null;
+        this.coverLetterFileName = null;
+        this.cvFileName = '';
+        this.coverLetterFileName = '';
+        window.location.reload();
+
+      } else this.submitting = false;
     });
   }
 }

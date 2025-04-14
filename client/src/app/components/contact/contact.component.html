@@ -3,12 +3,12 @@
         <div class="col-lg-7">
             <h1>Contact us!</h1>
             <div class="cu-hr"></div>
-            <form class="contact-form" action="">
-                <input type="text" placeholder="Full Name*" name="name" id="name" required>
-                <input type="text" placeholder="E-mail*" name="email" id="email" required>
-                <input type="number" placeholder="Phone Number" name="phone" id="phone">
-                <textarea name="message" id="message" placeholder="Message*" required></textarea>
-                <input type="submit" value="SEND MESSAGE" id="btnSubmit" class="btn">
+            <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                <input formControlName="name" type="text" placeholder="Full Name*" name="name" id="name" required>
+                <input formControlName="email" type="text" placeholder="E-mail*" name="email" id="email" required>
+                <input formControlName="phone" type="tel" placeholder="Phone Number" name="phone" id="phone">
+                <textarea formControlName="message" name="message" id="message" placeholder="Message*" required></textarea>
+                <input type="submit" [value]="submitting ? 'Sending...' : 'Send' " id="btnSubmit" class="btn" [disabled]="!contactForm.valid || submitting">
             </form>
         </div>
         <div class="col-lg-5">
@@ -28,3 +28,4 @@
         </div>
     </div>
 </div>
+
